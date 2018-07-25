@@ -1,27 +1,201 @@
 <!DOCTYPE html>
 <html lang="jp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>山本健太 | Kenta Yamamoto</title>
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
     <!-- custom CSS -->
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+
+
+
+    <header class="top-header">
+
+        <div class="top-nav">
+            <h1 class="top-nav__title">kenta yamamoto.</h1>
+            <ul class="top-nav__list">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            <p class="top-nav__search">
+                <ion-icon name="search"></ion-icon>
+            </p>
+        </div>
+
+        <div class="top-content">
+            <p class="top-cotent__message">
+                <span class="top-cotent__message--main">みんなが自分らしく</span>
+                <span class="top-cotent__message--sub">発言できる・行動できるそんな場を届けたい</span>
+            </p>
+        </div>
+
+    </header>
+
+
+
+
+
+    <section class="section-about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-5">
+                    <img src="photo/profile.jpg" alt="profile" class="profile__image">
+                    <p class="profile__iam">I am ...</p>
+                    <p class="profile__name">山本　健太</p>
+                </div>
+
+                <div class="col-sm-5">
+                    <p class="profile__text">This is Profile section.....</p>
+                    <p class="profile__text mb-60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam, facere expedita saepe quaerat ullam magnam soluta ducimus voluptatibus quisquam repudiandae quas sed. Voluptatem voluptatibus a, placeat aliquam, autem cumque!</p>
+                    <a href="#" class="btn btn--light">もっと詳しく&rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-cards border-bottom-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="photo/youtube.jpg" alt="youtube" class="card__img">
+                        <a href="#" class="card__text">Youtube</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="photo/alicia-apartelle.jpg" alt="alicia-apartelle" class="card__img">
+                        <a href="#" class="card__text">語学学校</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="photo/events.jpg" alt="events" class="card__img">
+                        <a href="#" class="card__text">イベント</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="photo/contact.jpg" alt="contact" class="card__img">
+                        <a href="#" class="card__text">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-blog border-bottom-grey">
+        <div class="container u-center-text">
+            <p class="h2-heading">最新の記事</p>
+            <div class="row blog-post__wrapper">
+                <div class="col-md-4">
+                    <article class="blog-card">
+                        <a href="#" class="blog-card__link">
+                            <figure class="blog-card__img">
+                                <img src="photo/post1.jpg" alt="post1">
+                            </figure>
+
+                            <div class="blog-card__info">
+                                <h2 class="article-title">これまでの生き方を問われても誇れる35歳を迎えることができるか？</h2>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-card">
+                        <a href="#" class="blog-card__link">
+                            <figure class="blog-card__img">
+                                <img src="photo/post2.png" alt="post2">
+                            </figure>
+
+                            <div class="blog-card__info">
+                                <h2 class="article-title">日本人として海外で働くこと</h2>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="blog-card">
+                        <a href="#" class="blog-card__link">
+                            <figure class="blog-card__img">
+                                <img src="photo/post3.png" alt="post3">
+                            </figure>
+
+                            <div class="blog-card__info">
+                                <h2 class="article-title">自分を貫く事の難しさ</h2>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <a href="#" class="btn btn--heavy">記事一覧はこちら</a>
+        </div>
+
+    </section>
+
+    <section class="section-sns">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-md-9">
+                   <div class="insta-gallery u-center-text">
+                       <p class="insta-gallery__text">Follow Me "kentalish"</p>
+                       <ul class="insta-gallery__list">
+                           <li class="insta-gallery__item"><a href="#"><img src="photo/insta1.png" alt="insta1" class="insta-gallery__img"></a></li>
+                           <li class="insta-gallery__item"><a href="#"><img src="photo/insta2.png" alt="insta2" class="insta-gallery__img"></a></li>
+                           <li class="insta-gallery__item"><a href="#"><img src="photo/insta3.png" alt="insta3" class="insta-gallery__img"></a></li>
+                           <li class="insta-gallery__item"><a href="#"><img src="photo/insta4.png" alt="insta4" class="insta-gallery__img"></a></li>
+                           <li class="insta-gallery__item"><a href="#"><img src="photo/insta5.png" alt="insta5" class="insta-gallery__img"></a></li>
+                           <li class="insta-gallery__item"><a href="#"><img src="photo/insta6.png" alt="insta6" class="insta-gallery__img"></a></li>
+                       </ul>
+                   </div>
+                    
+                </div>
+                
+                <div class="col-md-2">
+                    <ul class="sns-icons u-center-text">
+                        <li class="sns-icons__item"><a href="#"><i class="fab fa-twitter-square sns-icons__icon"></i></a></li>
+                        <li class="sns-icons__item"><a href="#"><i class="fab fa-instagram sns-icons__icon"></i></a></li>
+                        <li class="sns-icons__item"><a href="#"><i class="fab fa-youtube-square sns-icons__icon"></i></a></li>
+                        <li class="sns-icons__item"><a href="#"><i class="fab fa-facebook-square sns-icons__icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
     
-    
-    
-    
-    
-    
-    
+    <footer class="footer">
+        <p class="footer__copyright">&copy;copyright, Kenta!!!!!!!!!!!!!!!!! Thankyou</p>
+        
+    </footer>
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 </body>
+
 </html>

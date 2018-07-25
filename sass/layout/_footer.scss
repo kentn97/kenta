@@ -1,0 +1,15 @@
+.footer {
+    
+    height: 15rem;
+    background-image: linear-gradient(to right bottom, rgba(246, 179, 82, .8), rgba(252, 145, 58, .8));
+    clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    
+    &__copyright {
+        color: #fff;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1.4rem 3.2rem;
+    
+    &--light {
+        color: $color-black-primary;
+        border: 2px solid #FEEABC;
+    }
+    
+    &--heavy {
+        color: #fff;
+        background-color: #F6B352;
+
+    }
+}

@@ -1,0 +1,19 @@
+body {
+    font-family: 'Lato', 'Noto Sans Japanese', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $color-black-primary;
+}
+
+.h2-heading {
+    font-size: 3rem;
+}
+
+.article-title {
+    font-size: 1.6rem;
+    color: $color-black-primary;
+    font-weight: 400;
+    padding: .5rem 0 .5rem 1rem;
+    border-left: 3px solid #F6B352;
+    text-align: left;
+}
