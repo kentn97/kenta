@@ -1760,62 +1760,118 @@ body {
   font-size: 1.2rem;
   text-decoration: none;
   font-weight: 600;
-  padding: 1.4rem 3.2rem; }
+  padding: 1.4rem 3.2rem;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
   .btn--light {
     color: #4c4c4c;
     border: 2px solid #FEEABC; }
   .btn--heavy {
     color: #fff;
     background-color: #F6B352; }
+  .btn:hover {
+    -webkit-transform: translateY(-0.5rem);
+    -ms-transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem);
+    border-radius: 10rem; }
+  .btn:active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
 
 .section-cards {
   padding-bottom: 170px; }
 
 .card {
   width: 100%;
-  height: 255px;
   position: relative;
   overflow: hidden; }
+  .card__link {
+    display: block;
+    cursor: pointer;
+    line-height: 0; }
+  .card__img {
+    max-width: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+  .card__text {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #4c4c4c;
+    padding: 1.6rem 0;
+    width: 70%;
+    text-align: center;
+    background-color: #BFE9DB;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+  .card:hover .card__img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: blur(3px);
+    filter: blur(3px); }
+  .card:hover .card__text {
+    border-radius: 10rem; }
 
-.card:hover .card__img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-filter: blur(3px);
-  filter: blur(3px); }
+/*
+.card {
+    width: 100%;
+    height: 255px;
+    position: relative;  
+    overflow: hidden;
 
-.card:hover .card__text {
-  color: #fff; }
 
-.card__img {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
+    &__img {
+        width: 100%;
+        height: 100%;
+        transition: all .3s;
+    }
 
-.card__text {
-  display: inline-block;
-  position: absolute;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #4c4c4c;
-  padding: 1.6rem 0;
-  width: 70%;
-  text-align: center;
-  background-color: #BFE9DB;
-  border: 2px solid #fff;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
+    &__text {
+        display: inline-block;
+        position: absolute;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $color-black-primary;
+        padding: 1.6rem 0;
+        width: 70%;
+        text-align: center;
+        background-color: $color-green-primary;
+        border: 2px solid #fff;
 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+    }
+
+    &:hover &__img {
+        transform: scale(1.1);
+        filter: blur(3px);
+    }
+
+    &:hover &__text {
+        border-radius: 10rem;
+    }
+
+}
+
+*/
 .blog-card__link {
   display: block;
   cursor: pointer;
@@ -1824,21 +1880,25 @@ body {
   text-decoration: none;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
   .blog-card__link:hover {
     -webkit-transform: translateY(-0.5rem);
     -ms-transform: translateY(-0.5rem);
     transform: translateY(-0.5rem);
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    overflow: hidden; }
   .blog-card__link:active {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    overflow: hidden; }
 
 .blog-card__img {
   margin: 0;
@@ -1869,7 +1929,9 @@ body {
   justify-content: space-between; }
 
 .insta-gallery__item {
-  width: 13.3rem; }
+  width: 16.66666666%; }
+  .insta-gallery__item:not(:last-child) {
+    padding-right: .5rem; }
 
 .insta-gallery__img {
   width: 100%; }
@@ -1880,8 +1942,13 @@ body {
     display: inline-block;
     margin: 1.5rem; }
   .sns-icons__icon {
-    color: #000;
-    font-size: 3rem; }
+    color: #4c4c4c;
+    font-size: 3rem;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s; }
+    .sns-icons__icon:hover, .sns-icons__icon:active {
+      color: #BFE9DB; }
 
 .footer {
   height: 15rem;
@@ -1929,22 +1996,23 @@ Header
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-
-.top-nav__title {
-  font-size: 2.4rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
-
-.top-nav__list {
-  padding: 0; }
-
-.top-nav__list li {
-  display: inline-block;
-  padding: 0 20px; }
-
-.top-nav__list li a {
-  color: #fff;
-  font-size: 1.4rem;
-  text-decoration: none; }
+  .top-nav__title {
+    font-size: 2.4rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+  .top-nav__list {
+    padding: 0; }
+    .top-nav__list li {
+      display: inline-block;
+      padding: 0 20px; }
+      .top-nav__list li a {
+        color: #fff;
+        font-size: 1.4rem;
+        text-decoration: none;
+        -webkit-transition: color .3s;
+        -o-transition: color .3s;
+        transition: color .3s; }
+        .top-nav__list li a:hover, .top-nav__list li a:active {
+          color: #BFE9DB; }
 
 .top-content {
   position: absolute;

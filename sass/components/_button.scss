@@ -5,14 +5,25 @@
     font-weight: 600;
     padding: 1.4rem 3.2rem;
     
+    transition: .3s;
+    
     &--light {
         color: $color-black-primary;
-        border: 2px solid #FEEABC;
+        border: 2px solid $color-orange-secondary;
     }
     
     &--heavy {
         color: #fff;
-        background-color: #F6B352;
+        background-color: $color-orange-primary;
 
+    }
+    
+    &:hover {
+        transform: translateY(-.5rem);
+        border-radius: 10rem;
+    }
+    
+    &:active {
+        transform: translateY(0);
     }
 }

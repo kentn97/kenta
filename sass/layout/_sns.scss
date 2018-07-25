@@ -14,7 +14,11 @@
     }
     
     &__item {
-        width: 13.3rem;
+        width: 16.66666666%;
+        
+        &:not(:last-child) {
+            padding-right: .5rem;
+        }
     }
     
     &__img {
@@ -32,7 +36,13 @@
     }
     
     &__icon {
-        color: #000;
+        color: $color-black-primary;
         font-size: 3rem;
+        transition: color .3s;
+        
+        &:hover,
+        &:active {
+            color: $color-green-primary;
+        }
     }
 }
