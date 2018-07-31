@@ -3,6 +3,10 @@ body {
     font-size: 1.6rem;
     font-weight: 300;
     color: $color-black-primary;
+    
+    @include media-breakpoint-down(md) {
+        font-weight: 400;
+    }
 }
 
 .h2-heading {

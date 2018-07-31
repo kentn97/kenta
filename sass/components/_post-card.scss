@@ -3,7 +3,9 @@
 
 .blog-card {
     
-    
+    @include media-breakpoint-down(md) {
+        margin-bottom: 3rem;
+    }
     
     &__link {
         display: block;
@@ -13,6 +15,10 @@
         text-decoration: none;
         box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
         transition: all .3s;
+        
+        @include media-breakpoint-down(md) {
+            height: 24rem;
+        }
         
         &:hover  {
             transform: translateY(-.5rem);

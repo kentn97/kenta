@@ -5,6 +5,10 @@
     clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
     position: relative;
     
+    @include media-breakpoint-down(md) {
+        clip-path: polygon(0 70%, 100% 30%, 100% 100%, 0 100%);
+    }
+    
     &__copyright {
         color: #fff;
         position: absolute;
