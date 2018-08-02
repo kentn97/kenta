@@ -3,6 +3,7 @@
 
 .blog-card {
     
+    
     @include media-breakpoint-down(md) {
         margin-bottom: 3rem;
     }
@@ -18,6 +19,14 @@
         
         @include media-breakpoint-down(md) {
             height: 24rem;
+        }
+        
+        @include media-breakpoint-down(xs) {
+            height: 22rem;
+        }
+        
+        @media (max-width: 420px) {
+            height: 20rem;
         }
         
         &:hover  {
@@ -52,6 +61,11 @@
     &__info {
         width: 80%;
         margin: 2rem auto 0;
+        
+        @include media-breakpoint-down(xs) {
+            width: 85%;
+            margin: 1.5rem auto 0;
+        }
     }
     
 }

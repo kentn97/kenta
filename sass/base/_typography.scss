@@ -20,4 +20,8 @@ body {
     padding: .5rem 0 .5rem 1rem;
     border-left: 3px solid #F6B352;
     text-align: left;
+    
+    @include media-breakpoint-down(xs) {
+        font-size: 1.4rem;
+    }
 }

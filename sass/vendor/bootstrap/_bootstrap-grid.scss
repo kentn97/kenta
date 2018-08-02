@@ -23,10 +23,22 @@ html {
 @import "functions";
 @import "variables";
 
+
 @import "mixins/breakpoints";
 @import "mixins/grid-framework";
 @import "mixins/grid";
+//追加
+@import "mixins/hover";
+@import "mixins/border-radius";
+@import "mixins/transition";
+
+
 
 @import "grid";
+//追加
+@import "nav";
+@import "navbar";
+@import "transitions";
+
 @import "utilities/display";
 @import "utilities/flex";

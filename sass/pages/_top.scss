@@ -26,9 +26,20 @@ Header
     justify-content: space-between;
     align-items: center;
     
+    
     &__title {
         font-size: 2.4rem;
         text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    }
+    
+    &__toggle {
+        padding: .5rem;
+        border-color: #fff !important;
+        
+        & ion-icon {
+            color: #fff;
+            font-size: 2rem;
+        }
     }
     
     &__list {
@@ -50,6 +61,14 @@ Header
                 }
             }
         }
+    }
+    
+    &__search {
+        & ion-icon {
+            vertical-align: middle;
+            font-size: 2.4rem;
+        }
+        
     }
 }
 
@@ -104,7 +123,7 @@ About
 }
 
 .profile__iam {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .profile__name {
@@ -139,7 +158,6 @@ Blog
 
 .blog-post__wrapper {
     margin-top: 7rem;
-    margin-bottom: 12.5rem;
 }
 
 
